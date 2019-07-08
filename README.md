@@ -4,6 +4,7 @@
 Bountybot is mass basic vulnerability checker for bug hunters which based python 3.6.5
 
 ### Features
+Scanning Subdomains
 Checks for no password MySQL server on 3306 and 9306 port.<br/>
 Checks for no password FTP server on port 21.<br/>
 Checks for Unclaimed Social Media Accounts which linked on page. (Still Developing...)<br/>
