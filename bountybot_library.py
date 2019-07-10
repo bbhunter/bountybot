@@ -84,7 +84,7 @@ def getsubdomains(iwebsite):
 		pass
 	except Exception as e:
 		subdomains = []
-		subdomains.append(iwebsite)
+		subdomains.append({"domain":iwebsite})
 		return subdomains
 		pass
 	pass
