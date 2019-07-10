@@ -68,12 +68,7 @@ def hostinjection(iwebsite,itimeout):
 			return True
 			pass
 		else:
-			if "helloiamsuperhuman.com" in r.text:
-				return True
-				pass
-			else:
-				return False
-				pass
+			return False
 			pass
 		pass
 	except Exception as e:
@@ -82,9 +77,16 @@ def hostinjection(iwebsite,itimeout):
 	pass
 
 def getsubdomains(iwebsite):
-	s = spyse()
-	subdomains = s.subdomains(iwebsite, param="domain")["records"]
-	return subdomains
+	try:
+		s = spyse()
+		subdomains = s.subdomains(iwebsite, param="domain")["records"]
+		return subdomains
+		pass
+	except Exception as e:
+		subdomains = []
+		subdomains.append(iwebsite)
+		return subdomains
+		pass
 	pass
 
 def getunclaimedsocialmedia(iwebsite,itimeout):
